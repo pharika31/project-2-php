@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Unscramble me</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/gamePlay.css">
+  </head>
+
+  <body>
+  
+  <?php
+  //php to set up words for the game
+  $words=array("program","strange","jumble","apple");
+  
+  //randomly pick one element from word list
+  $random_word_index=mt_rand(0,(count($words)-1));
+  
+  //this is randomly selected to display to user, u still have to unscramble word
+  $selected_word= array[$random_word_index];
+  echo"$selected_word";
+  
+  
+  ?>
+  
+  <div class="page-header">
+  <p id="game-name">UNSCRAMBLE ME</p>
+  </div>
+  <div class="container">
+  
+	<!--Inside the following container we only want to show different characters of the word
+	we might want to create seperate boxes depending upon number of characters.
+	-->
+	
+	<div class="word-box">
+  
+	</div>
+	<!--Another container with multiple sections to show seperate boxes for each char of the word-->
+	<div class="answer-box">
+	<!--you might need form with post method here-->
+	
+	</div>
+	
+  </div>
+  </body>
+  </html>
