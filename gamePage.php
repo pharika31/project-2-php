@@ -11,7 +11,8 @@
  
   
   <div class="page-header">
-  <p id="game-name">UNSCRAMBLE ME</p>
+	
+	  <img class="img-responsive" src="images/header.png" alt="header"/>
   </div>
   <div class="container">
   
@@ -71,15 +72,42 @@
 	  echo "</tr>";
 	  echo "</tbody>";
 	  echo "</table>";
+	  
 	 
-  ?>
+	  
+	  
+	 echo"<div class=\"answer\">";
+ 
+  
+  echo"<p><form name=\"answer\" action=\"result.php\" method=\"post\"></p>";
+ 
+ 
+		for($i=0;$i<$length;$i++){
+	 
+ 
+		echo"&nbsp<input name=\"$i\" type=\"text\" size=\"5\" />";
+		}
+        
+		  
+  echo"</form>"; 
+  echo"</div>";
+
+ ?>
+ 
+          
+  
+  
 	</div>
 	<!--Another container with multiple sections to show seperate boxes for each char of the word-->
-	<div class="answer-box">
-	<!--you might need form with post method here-->
-	
-	</div>
 	
   </div>
+  <div class="answer-box">
+	<!--you might need form with post method here-->
+	<audio autoplay="autoplay"  loop="loop">  
+   <source src="images/Marimba-Music/Marimba-Music.mp3" />  
+  
+</audio> 
+	</div>
+	
   </body>
   </html>
