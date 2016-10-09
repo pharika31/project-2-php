@@ -22,7 +22,7 @@
 	
 	<div class="word-box">
 	<?php
-		 //header( "url=gamePage.php" );
+		 header( "url=gamePage.php" );
   //php to set up words for the game
   $words=array("PROGRAM","STRANGE","JUMBLE","APPLE");
   
@@ -94,7 +94,7 @@
 		echo"&nbsp<input name=\"$i\" type=\"text\" size=\"5\" />";
 		}
         
-		echo"<p><input type=\"submit\" class=\"button\" value=\"Submit\" name=\"Submit\"/></p>";
+		echo"<p><input type=\"submit\" class=\"button\" value=\"Click\" name=\"Submit\"/></p>";
 		  
   echo"</form>"; 
   echo"</div>";
@@ -114,15 +114,8 @@
    <source src="images/Marimba-Music/Marimba-Music.mp3" />  
   
 </audio> 
-<form name="newword"  action="gamePage.php">
 
-<p><input type="submit" class="button" value="New Word" name="newword"/></p>
-</form>
-
-<form name="endgame"  action="endGame.php">
-
-<p><input type="submit" class="button" value="End Game" name="end"/></p>
-</form>
+<p><button class="button"><a href="gamePage.php"><span>New Word</span></a></button></p>
 
 	</div>
 	
