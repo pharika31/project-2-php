@@ -22,7 +22,9 @@
 	
 	<div class="word-box">
 	<?php
-	
+	session_start();
+	$current_score=$_SESSION['score'];
+	$_SESSION['addup']=$current_score;
 	
    //header( "url=gamePage.php" );
   //php to set up words for the game
@@ -87,7 +89,7 @@
 	 echo"<div class=\"answer\">";
  
   
-  echo"<p><form name=\"answer\" action=\"verify.php\" method=\"post\"></p>";
+  echo"<p><form name=\"answer\" action=\"verify1.php\" method=\"post\"></p>";
  
  
 		for($i=0;$i<$length;$i++){
@@ -116,7 +118,7 @@
   <div class="answer-box">
 	<!--you might need form with post method here-->
 	<audio autoplay="autoplay"  loop="loop">  
-   <source src="images/Marimba-Music/happy.mp3" />  
+   <source src="images/Marimba-Music/Marimba-Music.mp3" />  
   
 </audio> 
 <form name="newword"  action="newgame.php">

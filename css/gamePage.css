@@ -107,7 +107,7 @@ input[type=text]{
 	opacity:0.6;
 	text-align:center;
 	width:10%;
-	font-size:60px;
+	font-size:40px;
 	font-weight:bold;
 	background-color: rgb(204, 228, 255);
 	text-shadow: rgb(0, 255, 255) -5px -5px 20px;
@@ -127,3 +127,21 @@ input[type=text]{
   margin: 5px;
 }
 
+.message-container{
+	background-color:#33ccff;
+    margin-top:1%;
+	float:left;
+	padding:0;
+	width:60%;
+	height:70%;
+    border:5px solid #000;
+    border-radius:10px;
+    border-color:yellow;
+    font:32px Verdana, Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+.para {
+   font-size: 30px;
+   font-family: Snap ITC;
+   color: #004080;
+}

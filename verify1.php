@@ -21,8 +21,8 @@
   
   <?php
   session_start();
- 
   
+   $addup=$_SESSION['addup'];
   //code to retrieve word from previous page-header
   $word_to_match=$_POST['selected_word'];
    $user_answer=array();
@@ -42,18 +42,19 @@
   }
   else{
 	  echo "<p class= para>Better luck next time!<br/>";
-	  echo "The correct answer is: $word_to_match</p>";	  
+	  echo "The correct answer is: $word_to_match</p>";	
+  
   }
   
  $score=0;
   if($comparison_value==0){
-	  $score=$score+10;
-	  echo"<p class= para>Your score is:  $score </p>";
+	  $score=$score+10+$addup;
+		echo"<p class= para>Your score is:  $score </p>";
   }
-  else{
-	  $score=$score;
-  echo"<p class= para>Your score is:  $score </p>";
-  }
+ else{
+	  $score=$addup;
+  echo"<p class= para>Your score is:  $score </p>";	
+ }
   $_SESSION['score']=$score;
   
   ?>
