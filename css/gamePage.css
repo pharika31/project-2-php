@@ -136,6 +136,22 @@ input[type=text]{
   margin: 5px;
   text-decoration:none;
 }
+.button2 {
+	margin-left:35%;
+	margin-top:5%;
+    text-align: center;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  
+  cursor: pointer;
+  
+  text-decoration:none;
+}
 
 .message-container{
 	background-color:#33ccff;
@@ -166,4 +182,19 @@ input[type=text]{
     outline: none;
     border-color: #000000;
     box-shadow: 0 0 10px #9ecaed;
+}
+.endcontainer
+{
+        background-color:#33ccff;
+        margin: 15% 0 0 19%;
+        border:5px solid #000;
+        border-radius:10px;
+        border-color:yellow;
+        font:32px Verdana, Arial, Helvetica, sans-serif;
+        float:left;
+        padding:0;
+        width:60%;
+        height:45%;
+        cursor:pointer;
+		text-align:center;
 }

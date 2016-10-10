@@ -126,7 +126,7 @@
 <p><input type="submit" class="button" value="New Word" name="newword"/></p>
 </form>
 
-<form name="endgame"  action="endGame.php">
+<form name="endgame"  action="endGame.html">
 
 <p><input type="submit" class="button" value="End Game" name="end"/></p>
 </form>
