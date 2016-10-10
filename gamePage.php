@@ -93,7 +93,7 @@
 		for($i=0;$i<$length;$i++){
 	 
  
-		echo"&nbsp<input name=\"$i\" type=\"text\" size=\"5\" />";
+		echo"&nbsp<input class= \"glow-effect\" name=\"$i\" type=\"text\" size=\"5\" />";
 		}
 		
   echo"<input type=\"hidden\" name=\"selected_word\" value=\"$selected_word\" /> ";
@@ -119,7 +119,7 @@
    <source src="images/Marimba-Music/happy.mp3" />  
   
 </audio> 
-<form name="newword"  action="newgame.php">
+
 
 <p><input type="submit" class="button" value="New Word" name="newword"/></p>
 </form>

@@ -9,7 +9,7 @@
   <body>
   
  <audio autoplay="autoplay"  loop="loop">  
-   <source src="images/Marimba-Music/Marimba-Music.mp3" />  
+   <source src="images/Marimba-Music/happy.mp3" />  
   
 </audio> 
   
@@ -38,11 +38,21 @@
   
   if($comparison_value==0)
   {
+	  echo"<audio autoplay=\"autoplay\" >  
+   <source src=\"images/Marimba-Music/applause.mp3\" />  
+  
+</audio> ";
 	echo "<p class= para>Good job! You got it right!</p>";  
+	echo"<img class=\"img-game\" src=\"images/win.png\"/>";	
   }
   else{
-	  echo "<p class= para>Better luck next time!<br/>";
+	  echo"<audio autoplay=\"autoplay\" >  
+   <source src=\"images/Marimba-Music/sad.mp3\" />  
+  
+</audio> ";
+	  echo "<p class= para>Sorry! Your answer is incorrect.<br/>";
 	  echo "The correct answer is: $word_to_match</p>";	
+	   echo"<img class=\"img-game\" src=\"images/lose.png\"/>";
   
   }
   

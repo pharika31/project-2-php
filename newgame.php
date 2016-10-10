@@ -95,7 +95,7 @@
 		for($i=0;$i<$length;$i++){
 	 
  
-		echo"&nbsp<input name=\"$i\" type=\"text\" size=\"5\" />";
+		echo"&nbsp<input class= \"glow-effect\" name=\"$i\" type=\"text\" size=\"5\" />";
 		}
 		
   echo"<input type=\"hidden\" name=\"selected_word\" value=\"$selected_word\" /> ";
@@ -118,7 +118,7 @@
   <div class="answer-box">
 	<!--you might need form with post method here-->
 	<audio autoplay="autoplay"  loop="loop">  
-   <source src="images/Marimba-Music/Marimba-Music.mp3" />  
+   <source src="images/Marimba-Music/happy.mp3" />  
   
 </audio> 
 <form name="newword"  action="newgame.php">

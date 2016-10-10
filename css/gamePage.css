@@ -20,6 +20,15 @@ body{
 	
 	
 }
+.img-game{
+	margin-top:-1%;
+	display:block;
+   width: 20%;
+    height: 20%;
+	text-align:center;
+	
+	
+}
 .container
 {
 	background-color:yellow;
@@ -125,6 +134,7 @@ input[type=text]{
   
   cursor: pointer;
   margin: 5px;
+  text-decoration:none;
 }
 
 .message-container{
@@ -139,9 +149,21 @@ input[type=text]{
     border-color:yellow;
     font:32px Verdana, Arial, Helvetica, sans-serif;
     cursor:pointer;
+	
 }
 .para {
    font-size: 30px;
    font-family: Snap ITC;
    color: #004080;
+}
+
+.glow-effect {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.glow-effect:focus { 
+    outline: none;
+    border-color: #000000;
+    box-shadow: 0 0 10px #9ecaed;
 }

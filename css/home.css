@@ -1,0 +1,99 @@
+#home{
+background-color:yellow;
+background-size: cover;
+background-attachment: fixed;
+overflow-x:hidden;
+
+}
+
+.logo {
+
+	position: absolute;
+	left: 59%;
+	margin: 2% -20%;
+	animation: slide 1s 1;
+}
+@keyframes slide {
+	from { left: -150%; }
+	to { left: 59%; }
+	
+}
+ 
+.logo{
+margin-top: 3%;
+
+display: block;
+}
+img{
+width:60%;
+height:auto;
+top:50%;
+left:70%;
+}
+
+
+
+.button1 {
+   
+    background-color: #4ce600;
+    border: none;
+    color: white;
+    padding: 25px 32px;
+	margin-left:42%;
+	margin-top:25%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 6px;
+	font-family: showcard gothic;
+    font-size: 30px;
+    cursor: pointer;
+	
+	}
+	
+	
+.button1 {
+display: block;
+width: 250px;
+border: 2px solid #004d00;
+
+}
+
+
+
+.button2{
+    background-color: #4ce600;
+    border: none;
+    color: white;
+    padding: 25px 32px;
+	margin-left:40%;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	border-radius: 6px;
+	font-family: showcard gothic;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button2 {
+display: block;
+width: 250px;
+border: 2px solid #004d00;
+}
+
+
+
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+
+
